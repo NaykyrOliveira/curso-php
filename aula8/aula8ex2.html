@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/estilo.css"/>
+    <title>Exercicío 2 - Aula 8</title>
+    <style>
+        .formulario {
+            font-weight: bold;
+        }
+        .nome {
+            width: 40%;
+        }
+        .nascimento {
+            width: 21%;
+            margin-top: 5px;
+        }
+
+        .form_sexo {
+            width: 46%;
+        }
+
+        .button {
+            margin: 5px 3px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <form method="get" action="02idade.php">
+            Nome: <input class="nome" type="text" name="nome"> <br>
+            Ano de Nascimento: <input class="nascimento" type="number" name="ano"> <br>
+            <fieldset class="form_sexo"><legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc" value="homem" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="mulher">
+                <label for="fem">Feminino</label>
+            </fieldset>
+            <input class="button" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
